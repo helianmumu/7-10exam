@@ -1,0 +1,105 @@
+body
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+.header
+  width: 100%
+  height: .44rem
+  line-height: .44rem
+  position: relative
+  display: -webkit-flex
+  justify-content: center
+  border-bottom: 1px solid #ccc
+  background: url("../images/imgs/nav.jpg") no-repeat
+  background-size: 100% 100%
+  h3
+    color: #ffffff
+    font-size: .16rem
+    font-weight: normal
+  .right
+    position: absolute
+    right: .1rem
+    color: #ffffff
+
+.content
+  -webkit-flex: 1
+  overflow-y: scroll
+  background: #F6F6F6
+  padding-bottom: .5rem
+  .banner-container
+    .banner-wrapper
+      .banner-slide
+        width: 100%
+        height: 1.3rem
+        img
+          width: 100%
+          height: 100%
+    .swiper-pagination
+      bottom: 5px
+      .swiper-pagination-bullet
+        background: rgb(255,255,255)
+        opacity: .5
+      .swiper-pagination-bullet-active
+        background: #FF3527
+        opacity: 1
+  .myserver
+    height: 2.34rem
+    background: #ffffff
+    .myserver-title
+      height: .4rem
+      line-height: .4rem
+      span
+        font-size: .14rem
+        margin-left: .1rem
+        border-left: 3px solid #FF3527
+        padding-left: .1rem
+        box-sizing: border-box
+    .myserver-main
+      a
+        float: left
+        width: 25%
+        text-align: center
+        border: 1px solid #cccccc
+        box-sizing: border-box
+        border-right: none
+        dl
+          dt
+            width: .3rem
+            height: .35rem
+            margin: 0 auto
+            padding-top: .15rem
+            img
+              width: 100%
+              height: 100%
+          dd
+            height: .2rem
+            margin-top: .15rem
+            line-height: .2rem
+            padding-bottom: .1rem
+            color: #4F4E4E
+  .about
+    height: 1.37rem
+    margin-top: .15rem
+    border-top: 1px solid #cccccc
+
+.footer
+  height: .5rem
+  text-align: center
+  border-top: 1px solid #ccc
+  .footer-nav
+    display: -webkit-flex
+    a
+      -webkit-flex: 1
+      text-align: center
+      margin-top: .1rem
+      dt
+        color: #FF3E3E
+      dd
+        color: #666
+    a.active dd
+      color: #FF3E3E

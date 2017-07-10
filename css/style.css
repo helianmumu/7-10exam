@@ -1,0 +1,103 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  position: relative;
+  display: -webkit-flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  background: url("../images/imgs/nav.jpg") no-repeat;
+  background-size: 100% 100%; }
+  .header h3 {
+    color: #ffffff;
+    font-size: 0.16rem;
+    font-weight: normal; }
+  .header .right {
+    position: absolute;
+    right: 0.1rem;
+    color: #ffffff; }
+
+.content {
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  background: #F6F6F6;
+  padding-bottom: 0.5rem; }
+  .content .banner-container .banner-wrapper .banner-slide {
+    width: 100%;
+    height: 1.3rem; }
+    .content .banner-container .banner-wrapper .banner-slide img {
+      width: 100%;
+      height: 100%; }
+  .content .banner-container .swiper-pagination {
+    bottom: 5px; }
+    .content .banner-container .swiper-pagination .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.5; }
+    .content .banner-container .swiper-pagination .swiper-pagination-bullet-active {
+      background: #FF3527;
+      opacity: 1; }
+  .content .myserver {
+    height: 2.34rem;
+    background: #ffffff; }
+    .content .myserver .myserver-title {
+      height: 0.4rem;
+      line-height: 0.4rem; }
+      .content .myserver .myserver-title span {
+        font-size: 0.14rem;
+        margin-left: 0.1rem;
+        border-left: 3px solid #FF3527;
+        padding-left: 0.1rem;
+        box-sizing: border-box; }
+    .content .myserver .myserver-main a {
+      float: left;
+      width: 25%;
+      text-align: center;
+      border: 1px solid #cccccc;
+      box-sizing: border-box;
+      border-right: none; }
+      .content .myserver .myserver-main a dl dt {
+        width: 0.3rem;
+        height: 0.35rem;
+        margin: 0 auto;
+        padding-top: 0.15rem; }
+        .content .myserver .myserver-main a dl dt img {
+          width: 100%;
+          height: 100%; }
+      .content .myserver .myserver-main a dl dd {
+        height: 0.2rem;
+        margin-top: 0.15rem;
+        line-height: 0.2rem;
+        padding-bottom: 0.1rem;
+        color: #4F4E4E; }
+  .content .about {
+    height: 1.37rem;
+    margin-top: 0.15rem;
+    border-top: 1px solid #cccccc; }
+
+.footer {
+  height: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #ccc; }
+  .footer .footer-nav {
+    display: -webkit-flex; }
+    .footer .footer-nav a {
+      -webkit-flex: 1;
+      text-align: center;
+      margin-top: 0.1rem; }
+      .footer .footer-nav a dt {
+        color: #FF3E3E; }
+      .footer .footer-nav a dd {
+        color: #666; }
+    .footer .footer-nav a.active dd {
+      color: #FF3E3E; }
+
+/*# sourceMappingURL=style.css.map */

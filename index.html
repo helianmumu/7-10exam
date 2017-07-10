@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>服务</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="myApp">
+    <header class="header">
+        <h3>服务</h3>
+        <a href="javascript:;" class="right"><i class="fa fa-question-circle-o f20"></i></a>
+    </header>
+    <div class="content">
+        <div class="swiper-container banner-container">
+            <div class="swiper-wrapper banner-wrapper">
+                <div class="swiper-slide banner-slide">
+                    <img src="images/imgs/banner.jpg" alt="banner">
+                </div>
+                <div class="swiper-slide banner-slide">
+                    <img src="images/imgs/banner.jpg" alt="banner">
+                </div>
+                <div class="swiper-slide banner-slide">
+                    <img src="images/imgs/banner.jpg" alt="banner">
+                </div>
+                <div class="swiper-slide banner-slide">
+                    <img src="images/imgs/banner.jpg" alt="banner">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="myserver">
+            <div class="myserver-title">
+                <span>我的服务</span>
+            </div>
+            <div class="myserver-main">
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon1.png" alt="icon"></dt>
+                        <dd>场景审核</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon2.png" alt="icon"></dt>
+                        <dd>去尾页</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon3.png" alt="icon"></dt>
+                        <dd>短信推广</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon4.png" alt="icon"></dt>
+                        <dd>保障服务</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon5.png" alt="icon"></dt>
+                        <dd>红人点点</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon6.png" alt="icon"></dt>
+                        <dd>秀场推广</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        <div class="myserver about">
+            <div class="myserver-title about-title">
+                <span>场景相关</span>
+            </div>
+            <div class="myserver-main about-main">
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon7.png" alt="icon"></dt>
+                        <dd>我的场景</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon8.png" alt="icon"></dt>
+                        <dd>子账号场景</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt><img src="images/imgs/icon9.png" alt="icon"></dt>
+                        <dd>字体商城</dd>
+                    </dl>
+                </a>
+                <a href="javascript:;">
+                    <dl>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="javascript:;">
+                <dl>
+                    <dt class="fa fa-pencil-square f20"></dt>
+                    <dd>创作</dd>
+                </dl>
+            </a>
+            <a href="javascript:;">
+                <dl>
+                    <dt class="fa fa-star f20"></dt>
+                    <dd>服务</dd>
+                </dl>
+            </a>
+            <a href="javascript:;">
+                <dl>
+                    <dt class="fa fa-user f20"></dt>
+                    <dd>我的</dd>
+                </dl>
+            </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.banner-container',{
+            pagination: '.swiper-pagination',
+            loop: true
+        })
+        $('.footer-nav').on('click','a',function(){
+            var idx = $(this).index();
+            $('.footer-nav').find('a').eq(idx).addClass('active').siblings().removeClass('active');
+        })
+    </script>
+</body>
+</html>
